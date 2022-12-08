@@ -24,8 +24,8 @@ const cheerio = require("cheerio");
       }) 
       console.log(wordsArray);
     
-      const inputText = await wordsArray.join(" ");
-      console.log(await inputText)
+    const inputText = await wordsArray.join(" ");
+    console.log(await inputText)
     await page.waitForSelector("body");
     await page.waitForSelector(".rejectAll");
     await page.click(".rejectAll");
